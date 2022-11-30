@@ -1,0 +1,15 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+.App{
+    width:1540px;
+    height:762px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #333;
+}   

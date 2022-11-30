@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "Scrunchies";
+    src: url("../../assets/Fonts/Scrunchies-Regular.ttf");
+}
+
+.header {
+    padding: 10px 0px;
+}
+.header__layer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  font-family: "Scrunchies";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 96px;
+  text-align: center;
+}
+.header__layer_main{
+  font-family: "Scrunchies";
+  font-size:50px;
+  text-align: center;
+  z-index: 0;
+  user-select: none; 
+}
+.header__layer_back {
+  position: absolute;
+  top: 10px;
+}
+.header__suptitle {
+  font-family: "Scrunchies";
+  -webkit-text-stroke: 1px #FEB958;
+  font-size: 25px;
+  text-align: center;
+  color: #FEF7EC;
+  margin-top: 25px;
+  animation-name: pulse, changeColor;
+  animation-duration: 1s, 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  user-select: none; 
+}
+.header__advice {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  font-size: 1.5vh;
+}
+.header__content {
+  width:250px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: #FEF7EC;
+  padding: 0.5vh 1vh;
+  border-radius: 1vh 0px 0px 1vh;
+  background: #5A5A95;
+}
+.header__icon {
+  width: 2vh;
+  fill: #FEB958;
+  margin-right: 1.5vh;
+}
+.header__text{
+  user-select: none; 
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+@keyframes changeColor {
+  0% {
+    -webkit-text-stroke: 1px #FEB958;
+  }
+  33% {
+    -webkit-text-stroke: 1px #FD6E50;
+  }
+  66% {
+    -webkit-text-stroke: 1px #E15A8C;
+  }
+  100% {
+    -webkit-text-stroke: 1px #5A5A95;
+  }
+}

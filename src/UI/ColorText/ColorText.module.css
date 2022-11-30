@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Scrunchies";
+    src: url("../../assets/Fonts/Scrunchies-Regular.ttf");
+}
+
+.ColorText{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Paragraph{
+    font-family: "Scrunchies";
+    color: white;
+    font-size:25px;
+    user-select: none; 
+}
+
+.Copy{
+    color: white;
+    visibility: hidden;
+    width:65px;
+    font-size: 1.5vh;
+    border-radius: 0.5vh;
+    padding: 0.5vh;
+    background: rgba(46, 46, 46, 0.6);
+    transition:0s 0.3s;
+}
+
+.Paragraph:active + .Copy{
+    visibility: visible;
+    transition:0s;
+}

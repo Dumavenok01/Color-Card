@@ -1,0 +1,10 @@
+.ColorCard{
+    width: calc(100vw / 5 - 20px);
+    height: 460px;
+    background-color: #333;
+    outline: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
